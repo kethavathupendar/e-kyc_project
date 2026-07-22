@@ -1,0 +1,49 @@
+ekyc_project/
+│
+├── app.py                  # Main application
+├── config.yaml             # Configuration file
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation
+│
+├── data/
+│   ├── raw/                # Original uploaded images
+│   ├── processed/          # Cropped ID cards
+│   ├── intermediate/       # Temporary images
+│   └── models/             # Haar Cascade, YOLO weights, etc.
+│
+├── src/                    # Source code
+│   ├── preprocess.py
+│   ├── id_extraction.py
+│   ├── ocr_engine.py
+│   ├── face_verification.py
+│   ├── face_comparison.py
+│   ├── postprocess.py
+│   ├── db_operations.py
+│   ├── utils.py
+│   ├── logger.py
+│   └── config_loader.py
+│
+├── logs/
+│   └── ekyc_logs.log
+│
+├── database/
+│   ├── users.db
+│   └── schema.sql
+│
+├── notebooks/
+│   └── OCR_Experiments.ipynb
+│
+├── artifacts/
+│   ├── contour_id.jpg
+│   ├── extracted_face.jpg
+│   └── face_image.jpg
+│
+├── docs/
+│   ├── ekyc.drawio
+│   ├── ocr.drawio
+│   └── architecture.png
+│
+└── tests/
+    ├── test_ocr.py
+    ├── test_face.py
+    └── test_preprocess.py
